@@ -18,9 +18,9 @@ class Stack
 
     void push(int data)
     {
-        if (top < size - 1)
+        if (top <= size - 1)
         {
-            mem[++top] = data;
+            mem[top++] = data;
         }
         else
         {
@@ -44,7 +44,7 @@ class Stack
 int32_t main(int32_t argc, char const *argv[])
 {
 
-    Stack *s = new Stack(10);
+    Stack *s = new Stack(3);
     s->push(10);
     s->push(20);
     s->push(12);
