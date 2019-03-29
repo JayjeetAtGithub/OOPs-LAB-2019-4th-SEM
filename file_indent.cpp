@@ -11,12 +11,11 @@
 
 using namespace std;
 
-int main()
+int main(int argc, char const *argv[])
 {
     string str;
     string name;
-    cout << ("enter the file to indented ");
-    cin >> name;
+    name = argv[1];
 
     fstream file(name, ios::in);
     fstream test("test.txt", ios::out);
